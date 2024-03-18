@@ -1,0 +1,29 @@
+header {
+
+ padding: 2rem $gutter;  
+ h1 { 
+    font-size: 2rem;
+    color: #0b090a;
+
+ } 
+}
+nav button {display: none;}
+#primaryNav {display: flex;}
+nav {
+
+   ul {
+       
+       display: flex;
+   
+
+   }
+
+   ul li a {
+    border: none;
+   }
+   }
+
+   
+
+   header h4 {font-size: 14px;}
+  #phone {font-size: 14px;}

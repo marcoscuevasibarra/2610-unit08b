@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                       
+
+    <title>Document</title>
+
+
+<style>
+
+.maincontainer {
+
+position: relative;
+width: 200px;
+height: 300px;
+
+
+
+}
+.thecard {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background: #bfa89a;
+}
+.thecard:hover {
+        transform: rotateY(180deg);
+    }
+
+.thefront {
+
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+background: #d3dddd;
+color: #171c1b;
+
+}
+
+.theback {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #d3dddd;
+    color: #171c1b;
+    transform: rotateY(180deg);
+    
+    }
+   
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+    <meta name="description" content="Black Forest Art Center - Films - Comics - Library">
+    <meta name="author" content="Marcos Cuevas">
+
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--   google font- seleccion de font con 300 ,500, 700   -->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+<!--   google font- seleccion de font TEXT  -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<!--   google font- seleccion de font OTRAS COSAS EN TEXTO  -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Quicksand:wght@300..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+
+    
+  <!--   google font- termina   -->  
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    
+
+   <!--   favicon generator icons stuff  se removio slash de link de archivo pero se usa en real world-->
+   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+   <link rel="manifest" href="site.webmanifest">
+ <!--   favicon - termina   -->  
+</head>
+<body>
+
+<div id="headerWrapper">
+
+<header>
+   <!--   pixel density - se agraga srcset y las tres logos con 1x,2x,3x del folder   -->  
+<a href="#"><img src="images/LOGO40X32.png" alt="logo" width="40" height="32" srcset="images/LOGO40X32.png 1x, images/LOGO80x64.png 2x, images/LOGO120x96.png 3x"></a>
+
+
+
+<h1>Conference for Success</h1>
+<h4>"Future is now"</h4>
+    <h2 id="phone"><a href="#">801-533-1122</a></h2>
+    
+
+</header>
+</div>
+
+<div id="navWrapper">
+
+    <nav>
+        <button id="hamburgerBtn" >
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+
+
+        </button>
+        
+            <ul id="primaryNav">
+                <li><a href="#">Event Spaces</a></li>
+                <li><a href="#">Energic Zoom</a></li>
+                <li class="active"><a href="#">Digital Conferences</a></li>
+                <li><a href="#">Elegant Event Spaces</a></li>
+                <li><a href="#">Assembly of Minds</a></li>
+            </ul>
+
+
+
+    </nav>
+
+</div>
+
+<div id="mainWrapper">
+    <main>
+
+<h1>Digital Conferences</h1>
+ <!--   cards  - tarjetas  - photo y fecha   -->
+ <div class="hero">
+ <video autoplay muted playsinline loop width="800" height="300">
+    <source src="/MEDIA/Hero-Video-HB.webm" type="video/webm" />
+  
+    <source src="/MEDIA/Hero-Video-HB.mp4" type="video/mp4" />
+  
+ 
+  </video>
+
+  <div >
+<h3>The Future is Now!</h3>
+<p>Communication is the Key of Succesful Innovation</p>
+
+  </div>
+</div>
+<div id="flip">
+<div class="maincontainer">
+    <div class="thecard">
+        <div class="thefront"><img src="images/33.webp" alt="confe33">Superior voice and colaboration solutions</div>
+        <div class="theback">“When I first started speaking I was the typical university professor, now I can tell stories that engage my audience that can make them laugh and drive home the points I want to make. Without Michael and Marty’s help it would never have been possible. They have literally changed my life.” <br><br><br>
+            Anthony Giannoumis <br><br>
+            Inclusive Leadership
+            </div>
+
+
+    </div>
+
+</div>
+
+
+<div class="maincontainer">
+    <div class="thecard">
+        <div class="thefront"><img src="images/5.webp" alt="confe5">Simple, flexible connectivity</div>
+        <div class="theback">“MDSB Accelerator is the biggest game changer for me - it has taken me and my business to a whole new level. Easily one of the best investments I’ve ever made.” <br><br><br>
+            Amy Jacobson <br><br>
+            Emotional Intelligence Speaker
+            </div>
+
+
+    </div>
+
+</div>
+
+<div class="maincontainer">
+    <div class="thecard">
+        <div class="thefront"><img src="images/4.webp" alt="confe4"> Extensive cloud provider ecosystem</div>
+        <div class="theback">“I completed this program last year and honestly while it's an investment I got the value back in the first session and so much more, I've been able to accelerate my speaking and ensure that the product I'm offering has real value to the client. I highly recommend Michael Arnot and Marty Wilson program, if your wanting more from your speaking or have been in the industry for a while and looking to get more out of it then this is a great program to help.” <br>
+            <br><br>
+            Lisa Blair<br><br>
+            World Record Solo Sailor, Motivational Speaker
+            </div>
+
+
+    </div>
+
+</div>
+</div>
+  
+ <!-- tarjetas - card - termina   -->
+
+    </main>
+
+</div>
+
+<div id="footerWrapper">
+<footer>
+<p> &copy; <span id="year">x</span> &bull;   Marcos Cuevas</p>
+
+
+</footer>
+
+
+
+</div>
+<script src="js/scripts.js"></script>
+   
+    
+</body>
+</html>
